@@ -131,3 +131,13 @@
   background: rgb(241, 107, 107);
   color: #fff;
 }
+
+.complete {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+
+.container,
+.item {
+  touch-action: auto;
+}
