@@ -53,7 +53,7 @@
   font-size: 1rem;
 }
 
-.todo-add {
+.todo-button {
   padding: 5px 7px;
   border-radius: 4px;
   border: 2px solid indianred;
@@ -63,14 +63,15 @@
   cursor: pointer;
 }
 
-.todo-add:hover {
+.todo-button:hover {
   background: indianred;
   color: #fff;
 }
 
-.todo-body {
+.todo-container {
   height: 25rem;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
+  padding-top: 1.5rem;
 }
