@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0.7rem;
 }
 
 .todo-input {
@@ -74,4 +75,59 @@
   align-items: top;
   justify-content: center;
   padding-top: 1.5rem;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-div {
+  padding: 0.5rem 1rem;
+  display: flex;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  color: rgb(58, 67, 88);
+  justify-content: space-between;
+  align-items: center;
+  width: 18rem;
+}
+
+.todo-li {
+  flex: 1;
+  padding: 0.4rem;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.complete-button,
+.trash-button {
+  border: none;
+  cursor: pointer;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 4px;
+}
+
+.complete-button {
+  background: #fff;
+  border: 2px solid rgb(73, 204, 73);
+  margin-right: 0.4rem;
+  color: rgb(73, 204, 73);
+}
+.complete-button:hover {
+  background: rgb(73, 204, 73);
+  color: #fff;
+}
+
+.trash-button {
+  background: #fff;
+  border: 2px solid rgb(241, 107, 107);
+  color: rgb(241, 107, 107);
+}
+.trash-button:hover {
+  background: rgb(241, 107, 107);
+  color: #fff;
 }
