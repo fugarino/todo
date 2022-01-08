@@ -151,3 +151,18 @@
   font-size: 1rem;
   color: indianred;
 }
+
+.select {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.filter-todo {
+  border: 2px solid indianred;
+  border-radius: 4px;
+  color: indianred;
+  padding: 3px;
+  outline: none;
+  cursor: pointer;
+}
