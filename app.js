@@ -2,6 +2,7 @@
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
+const todoApp = document.querySelector(".todo");
 
 //EventListeners
 todoButton.addEventListener("click", addTodo);
@@ -12,7 +13,13 @@ function addTodo(e) {
   //Prevents form from submitting
   e.preventDefault();
   if (todoInput.value === "") {
-    return null;
+    const invalidDiv = document.createElement("div");
+    invalidDiv.classList.add("invalid-div");
+    invalidDiv.innerText = "Invalid Input";
+    todoApp.append(invalidDiv);
+    setTimeout(function () {
+      invalidDiv.remove();
+    }, 500);
   } else {
     //Create a div
     const todoDiv = document.createElement("div");
